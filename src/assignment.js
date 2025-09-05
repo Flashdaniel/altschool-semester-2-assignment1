@@ -166,6 +166,8 @@ export function calculateFactorials(arrayOfNumbers) {
 
     result = arrayOfNumbers.map((number) => {
         function factorialOf(number) {
+            if (number < 0)
+                return 0
             if (number === 0)
                 return 1
 
