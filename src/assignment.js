@@ -201,7 +201,7 @@ export function findPrimeNumbers(arrayOfNumbers) {
     arrayOfNumbers.forEach((number) => {
         let prime = true
 
-        if (number === 1)
+        if (number < 2)
             prime = false
 
         for (let i = 2; i < number; i++) {
